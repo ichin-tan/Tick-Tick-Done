@@ -31,6 +31,4 @@ Installation & Setup
 - Install dependencies using CocoaPods or Swift Package Manager.
 - Run the project on the simulator or a physical device.
 
-Author
-
-Chintan Panchal
+Author - Chintan Panchal
