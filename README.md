@@ -26,7 +26,7 @@ Technologies Used
 
 Installation & Setup
 
-- Clone the repository: git clone https://github.com/ichin-tan/TickTickDone.git
+- Clone the repository
 - Open the project in Xcode.
 - Install dependencies using CocoaPods or Swift Package Manager.
 - Run the project on the simulator or a physical device.
