@@ -23,6 +23,7 @@ class LaunchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Setup")
         self.setUp()
         self.applyStyle()
     }
