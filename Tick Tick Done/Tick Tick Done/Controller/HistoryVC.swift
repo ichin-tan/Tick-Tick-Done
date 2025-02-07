@@ -23,7 +23,7 @@ class HistoryVC: UIViewController {
     //MARK: - Custom methods -
     
     func setUp() {
-        
+        print("Set up")
     }
     
     func applyStyle() {
