@@ -17,6 +17,7 @@ jobs:
 
       - name: Check for Xcode Project
         run: |
+          cd Tick-Tick-Done
           if [ -z "$(ls Tick-Tick-Done | grep -E '\.xcodeproj$|\.xcworkspace$')" ]; then
             echo "❌ No Xcode project or workspace found in Tick-Tick-Done. Ensure you have a valid iOS project."
             exit 1
