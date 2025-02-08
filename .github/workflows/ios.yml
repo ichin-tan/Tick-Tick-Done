@@ -22,7 +22,7 @@ jobs:
             cd "Tick Tick Done"
             echo "Went to Tick Tick Done, now should have project"
             ls
-            if [ -z "$(ls "Tick Tick Done" | grep -E '\.xcodeproj$|\.xcworkspace$')" ]; then
+            if [ -z "$(ls | grep -E '\.xcodeproj$|\.xcworkspace$')" ]; then
             echo "❌ No Xcode project or workspace found in Tick Tick Done. Ensure you have a valid iOS project."
             exit 1
             fi
