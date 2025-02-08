@@ -31,7 +31,6 @@ class SignupVC: UIViewController {
     func setUp() {
         self.txtSignupEmail.delegate = self
         self.txtSignupPassword.delegate = self
-        print("set up")
     }
     
     func applyStyle() {
