@@ -34,6 +34,11 @@ jobs:
             default=$(echo "$scheme_list" | ruby -e "require 'json'; puts JSON.parse(STDIN.read)['project']['targets'][0]")
             echo "$default" > default
             echo "Using default scheme: $default"
+            
+      - name: Install Dependencies
+          run:|
+            cd "Tick Tick Done"
+            pod install
 
       - name: Build
         env:
