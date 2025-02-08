@@ -29,11 +29,11 @@ jobs:
 
       - name: Set Default Scheme
         run: |
-            cd "Tick Tick Done"
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo $default | cat >default
-          echo "Using default scheme: $default"
+            cd "Tick Tick Done"  # ✅ Navigate inside the project folder
+            scheme_list=$(xcodebuild -list -json | tr -d "\n")
+            default=$(echo "$scheme_list" | ruby -e "require 'json'; puts JSON.parse(STDIN.read)['project']['targets'][0]")
+            echo "$default" > default
+            echo "Using default scheme: $default"
 
       - name: Build
         env:
